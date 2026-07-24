@@ -1,17 +1,27 @@
 # widget
 
-A new Flutter project.
+A widget that shows how much of the current year is gone and how much is left.
 
-## Getting Started
+## What it shows
 
-This project is a starting point for a Flutter application.
+- Days passed since January 1
+- Days remaining until December 31
+- Percentage of the year completed
 
-A few resources to get you started if this is your first Flutter project:
+## Example
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```
+2026 — 205 / 365 days
+Days left: 160
+Progress: 56.2%
+[███████████░░░░░░░░░]
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+Open `index.html` in a browser. Everything updates automatically based on your system date.
+
+## How it works
+
+The widget takes the current date, counts days from the start of the year, and divides by the total days in the year (366 on leap years). No dependencies, no build step.
+
